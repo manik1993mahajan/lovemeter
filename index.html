@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MyApp</title>
+	<meta charset="utf-8" />
+    <script>
+        function lovepercentage() {
+            //alert('text');
+            var name = document.getElementById('text1').value;
+            var n = name.length;
+            //alert(n);
+            if(n<8)
+            {
+                alert('your love percentage is 70%');
+            }
+            else if(n>9 && n<12)
+            {
+                alert('your love percentage is 80%');
+            }
+            else if(n>12)
+            {
+                alert('your love percentage is 94%');
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="text1" placeholder="Enter your crush name" />
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="enter" onclick="lovepercentage()" /></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
